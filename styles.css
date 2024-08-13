@@ -1,0 +1,265 @@
+/* Variables de CSS */
+:root {
+    --color-fondo: #E5E5E5;
+    --color-titulo: #4CAF50;
+    --color-principal: #0A3871;
+    --color-secundario: #D8DFE8;
+    --color-texto-oscuro: #343A40;
+    --color-texto-claro: #495057;
+    --fuente-principal: 'Inter', sans-serif;
+    --font-size-grande: 1rem; /* 16px */
+    --font-size-mediana: 0.875rem; /* 14px */
+    --font-size-pequeño: 0.75rem; /* 12px */
+    --font-size-muy-pequeño: 0.625rem; /* 10px */
+    --line-height: 1.5;
+    --border-radius: 0.5rem; /* 8px */
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente-principal);
+    font-weight: 400;
+    font-size: var(--font-size-grande);
+    line-height: var(--line-height);
+    background: var(--color-fondo);
+     /* outline: 1px solid red;         */
+}
+
+/* Estilo general */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    /* padding: 1rem; /* Espaciado interno */
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    background-color: var(--color-titulo);
+    color: white;
+    padding: 1rem; /* Espaciado interno */
+    width: 100%;
+    text-align: center;
+    height: 10vh; /* Altura relativa a la altura de la ventana de visualización */
+}
+
+.logo {
+    background: transparent;
+}
+
+/* Secciones principales */
+main {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 1.5rem; /* Espaciado superior */
+    margin-bottom: 1rem; /* Espaciado inferior */
+    height: 80vh; /* Altura relativa a la altura de la ventana de visualización */
+    flex-direction: row;
+}
+
+/* Sección de entrada */
+.input-section {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    
+ }
+
+
+ .inferior {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: auto; /* Empuja la sección inferior hacia abajo */
+    width: 100%;
+}
+
+
+/* Sección de salida */
+.output-section {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-principal);
+    background: white;
+    border: none;
+    border-radius: var(--border-radius);
+}
+
+/* Imagen inicial en la sección de salida */
+.output-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1.5rem; /* Espaciado inferior */
+    background: transparent;
+}
+
+/* Esconder textarea y botón copiar inicialmente */
+.textoSalida, .boton-copiar {
+    display: none;
+}
+
+.textoEntrada {
+    border: none;
+    outline: none;
+    color: var(--color-principal);
+    text-transform: lowercase;
+}
+
+.textoEntrada::placeholder {
+    color: var(--color-principal);
+}
+
+.textoSalida {
+    border: none;
+    outline: none;
+    color: var(--color-principal);
+    text-transform: lowercase;
+    background: transparent;
+}
+
+.textoSalida::placeholder {
+    color: var(--color-principal);
+}
+
+.informacion {
+    font-family: var(--fuente-principal);
+    font-weight: 400;
+    font-size: var(--font-size-muy-pequeño);
+    line-height: var(--line-height);
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    gap: 0.625rem; /* Espaciado entre botones */
+    width: 100%;
+}
+
+.boton-encriptar {
+    background-color: var(--color-principal);
+    color: white;
+    border-radius: var(--border-radius);
+    height: 4.1875rem; /* 67px */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    border: 1px solid darkblue;
+}
+
+.boton-desencriptar {
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    border-radius: var(--border-radius);
+    height: 4.1875rem; /* 67px */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    border: 1px solid darkblue;
+}
+
+.boton-copiar {
+    color: var(--color-principal);
+    border-radius: var(--border-radius);
+    height: 4.1875rem; /* 67px */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    border: 1px solid darkblue;
+    background: transparent;
+}
+
+footer {
+    margin-top: auto;
+    background-color: var(--color-titulo);
+    color: white;
+    padding: 0.5rem; /* Espaciado interno */
+    width: 100%;
+    text-align: center;
+}
+
+.autor {
+    font-size: var(--font-size-mediana);
+    background: transparent;
+}
+
+.mensajesYCopiar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+}
+
+.mensajeNoEncontrado {
+    font-family: var(--fuente-principal);
+    font-weight: bold;
+    font-size: var(--font-size-mediana);
+    line-height: 120%;
+    color: var(--color-texto-oscuro);
+    background: transparent;
+}
+
+.mensajeInformativo {
+    font-family: var(--fuente-principal);
+    font-weight: regular;
+    font-size: var(--font-size-pequeño);
+    line-height: var(--line-height);
+    color: var(--color-texto-claro);
+    background: transparent;
+}
+
+.titulo {
+    background: transparent;
+    font-size: medium;
+}
+
+/* Responsive para tabletas */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        height: auto; /* Ajusta la altura según el contenido */
+        align-items: center; /* Centra las secciones */
+    }
+
+    .input-section, .output-section {
+        width: 90%; /* Ajusta el ancho de las secciones */
+    }
+
+    .output-section {
+        margin-top: 1rem; /* Espacio entre las secciones */
+    }
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem; /* Espaciado entre botones */
+}
+
+}
+
+/* Responsive para celulares */
+@media (max-width: 480px) {
+    .botones {
+        flex-direction: column;
+        gap: 0.625rem; /* Espaciado entre botones */
+    }
+
+    .boton-encriptar, .boton-desencriptar, .boton-copiar {
+        width: 100%; /* Botones ocupan todo el ancho disponible */
+    }
+
+    .input-section, .output-section {
+        width: 100%; /* Secciones ocupan todo el ancho disponible */
+    }
+
+    .output-section {
+        margin-top: 0.625rem; /* Espacio reducido entre las secciones */
+    }
+
+    .textoEntrada, .textoSalida {
+        font-size: var(--font-size-pequeño); /* Ajustar tamaño de fuente para pantallas más pequeñas */
+    }
+}
