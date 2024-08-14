@@ -10,63 +10,49 @@ Este proyecto es una aplicación web simple que encripta y desencripta texto usa
 - CSS
 - JavaScript
 
-## Instalación
+## Pagina Inicio
 
-1. Clona el repositorio:
-
-    ```bash
-    git clone https://github.com/tu-usuario/tu-repositorio.git
-    ```
-
-2. Navega al directorio del proyecto:
-
-    ```bash
-    cd tu-repositorio
-    ```
-
-
-3. Abre el archivo `index.html` en tu navegador para ver la aplicación en acción.
+3. Ubicar y abrir el archivo `index.html` en tu navegador para ver la aplicación en acción.
 
 ## Uso
 
-1. Ingresa el texto en el área de texto de entrada.
-2. Haz clic en el botón "Encriptar" para transformar el texto.
+ ### Para encriptar
+1. Ingresar el texto a encriptar en el área de texto de entrada.
+2. Hacer click en el botón "Encriptar" para transformar el texto.
 3. El texto encriptado aparecerá en el área de texto de salida.
-4. Haz clic en el botón "Desencriptar" para revertir el texto a su forma original.
-5. Utiliza el botón "Copiar" para copiar el texto encriptado al portapapeles.
+4. Utilizar el botón "Copiar" para copiar el texto encriptado al portapapeles.
+
+
+ ### Para desencriptar
+1. Ingresar el texto a desencriptar en el área de texto de entrada.
+2. Hacer click en el botón "Desencriptar" para transformar el texto a su forma original.
+3. El texto desencriptado aparecerá en el área de texto de salida.
+4. Utiliza el botón "Copiar" para copiar el texto desencriptado al portapapeles.
+
 
 ## Capturas de Pantalla
 
-Aquí puedes ver cómo se ve la aplicación:
+#### Vista de la pantalla de como se ve la aplicación:
 
-![Descripción de la imagen](./assets/images/pantalla01.png)
+![Descripción de la imagen](./assets/images/01-Pantalla_inicial_desktop.png)
 
+#### Vista de la pantalla aplicación en uso:
 
-![Descripción de la imagen](./assets/images/pantalla02.png)
+![Descripción de la imagen](./assets/images/02-Pantalla_uso_desktop.png)
 
+#### Vista de la resolucion del mensaje secreto:
 
+![Descripción de la imagen](./assets/images/03-Pantalla_mensaje_secreto_desktop.png)
 
-
-
-## Contribuciones
-
-Si deseas contribuir a este proyecto, por favor sigue estos pasos:
-
-1. Haz un fork del repositorio.
-2. Crea una nueva rama (`git checkout -b feature/nueva-caracteristica`).
-3. Realiza tus cambios.
-4. Haz commit de tus cambios (`git commit -am 'Agrega nueva característica'`).
-5. Envía tu rama al repositorio (`git push origin feature/nueva-caracteristica`).
-6. Crea un nuevo Pull Request.
 
 ## Licencia
 
-Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para detalles.
+Este proyecto es free y puede ser usado por quien lo considere útil.
 
 ## Contacto
 
 Para más información, puedes contactar a:
 
-- **Nombre:** Luis Omar
-- **Correo:** tu-email@example.com
-- **GitHub:** [tu-usuario](https://github.com/tu-usuario)
+- **Nombre:** Luis Omar Specterman
+- **Correo:** lspecte@gmail.com
+- **GitHub:** https://github.com/SpectermanLuis/
