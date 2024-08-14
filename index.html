@@ -16,25 +16,25 @@
         <h1 class="titulo">Encriptador de Texto</h1>
     </header>
     <main>
-        <section class="input-section">
+        <section class="entrada-section">
             <textarea class="textoEntrada" id="textoEntrada" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
         <div class="inferior"> 
-            <div class="informacion">
-                <h6>
+            <div>
+                <h6 class="informacion">
                     <img src="./assets/images/bi_exclamation-circle-fill.png" alt="Icono"> Solo letras minusculas y sin acento
                 </h6>
             </div>
             <div class="botones">
-                <button class="boton-encriptar" id="encryptBtn" onclick="botonEncriptarTexto()">Encriptar</button>
-                <button class="boton-desencriptar" id="decryptBtn" onclick="botonDesencriptarTexto()">Desencriptar</button>
+                <button class="boton-encriptar"    onclick="botonEncriptarTexto()">Encriptar</button>
+                <button class="boton-desencriptar" onclick="botonDesencriptarTexto()">Desencriptar</button>
             </div>
         </div>       
         </section>
-        <section class="output-section">
+        <section class="salida-section">
             <img id="placeholderImagen" src="./assets/images/imagen-notexto.png" alt="Imagen Inicial">
             <textarea class="textoSalida" id="textoSalida" cols="20" rows="10"></textarea>
             <div class="mensajesYCopiar">
-                <h2 class="mensajeNoEncontrado">Ningún mensaje fue encontrado</h2>
+                <h4 class="mensajeNoEncontrado">Ningún mensaje fue encontrado</h4>
                 <h3 class="mensajeInformativo">Ingresa el texto que desees encriptar o desencriptar.</h3>
                 <button class="boton-copiar" id="copyBtn" onclick="copyText()">Copiar</button>
             </div>

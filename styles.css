@@ -1,4 +1,4 @@
-/* Variables de CSS */
+/* Variables */
 :root {
     --color-fondo: #E5E5E5;
     --color-titulo: #4CAF50;
@@ -7,12 +7,13 @@
     --color-texto-oscuro: #343A40;
     --color-texto-claro: #495057;
     --fuente-principal: 'Inter', sans-serif;
-    --font-size-grande: 1rem; /* 16px */
-    --font-size-mediana: 0.875rem; /* 14px */
-    --font-size-pequeño: 0.75rem; /* 12px */
-    --font-size-muy-pequeño: 0.625rem; /* 10px */
+    --font-size-muy-grande: 2rem; 
+    --font-size-grande: 1rem;     
+    --font-size-mediana: 0.875rem;
+    --font-size-pequeño: 0.75rem; 
+    --font-size-muy-pequeño: 0.625rem; 
     --line-height: 1.5;
-    --border-radius: 0.5rem; /* 8px */
+    --border-radius: 0.5rem; 
 }
 
 /* Estilos generales */
@@ -28,7 +29,6 @@
      /* outline: 1px solid red;         */
 }
 
-/* Estilo general */
 body {
     display: flex;
     flex-direction: column;
@@ -42,49 +42,47 @@ header {
     display: flex;
     background-color: var(--color-titulo);
     color: white;
-    padding: 1rem; /* Espaciado interno */
+    padding: 1rem; 
     width: 100%;
     text-align: center;
-    height: 10vh; /* Altura relativa a la altura de la ventana de visualización */
+    height: 10vh; 
 }
 
 .logo {
     background: transparent;
 }
 
-/* Secciones principales */
+
 main {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    margin-top: 1.5rem; /* Espaciado superior */
-    margin-bottom: 1rem; /* Espaciado inferior */
-    height: 80vh; /* Altura relativa a la altura de la ventana de visualización */
+    margin-top: 1.5rem; 
+    margin-bottom: 1rem; 
+    height: 80vh; 
     flex-direction: row;
 }
 
 /* Sección de entrada */
-.input-section {
+.entrada-section {
     width: 45%;
     display: flex;
     flex-direction: column;
     align-items:start;
-    
  }
-
 
  .inferior {
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin-top: auto; /* Empuja la sección inferior hacia abajo */
+    margin-top: auto; 
     width: 100%;
 }
 
 
 /* Sección de salida */
-.output-section {
-    width: 45%;
+.salida-section {
+    width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,15 +93,15 @@ main {
 }
 
 /* Imagen inicial en la sección de salida */
-.output-section img {
+.salida-section img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin-bottom: 1.5rem; /* Espaciado inferior */
+    margin-bottom: 1.5rem; 
     background: transparent;
 }
 
-/* Esconder textarea y botón copiar inicialmente */
+/* Ocultar textarea y botón copiar inicialmente */
 .textoSalida, .boton-copiar {
     display: none;
 }
@@ -113,10 +111,12 @@ main {
     outline: none;
     color: var(--color-principal);
     text-transform: lowercase;
+    font-size : var(--font-size-muy-grande);    
 }
 
 .textoEntrada::placeholder {
     color: var(--color-principal);
+    font-size : var(--font-size-muy-grande);
 }
 
 .textoSalida {
@@ -125,6 +125,8 @@ main {
     color: var(--color-principal);
     text-transform: lowercase;
     background: transparent;
+    font-size : var(--font-size-muy-grande);
+    margin-left: 1rem;
 }
 
 .textoSalida::placeholder {
@@ -134,14 +136,14 @@ main {
 .informacion {
     font-family: var(--fuente-principal);
     font-weight: 400;
-    font-size: var(--font-size-muy-pequeño);
+    font-size: var(--font-size-mediano);
     line-height: var(--line-height);
 }
 
 .botones {
     display: flex;
     flex-direction: row;
-    gap: 0.625rem; /* Espaciado entre botones */
+    gap: 0.625rem; 
     width: 100%;
 }
 
@@ -149,8 +151,8 @@ main {
     background-color: var(--color-principal);
     color: white;
     border-radius: var(--border-radius);
-    height: 4.1875rem; /* 67px */
-    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 4.1875rem;
+    width: 100%; 
     border: 1px solid darkblue;
 }
 
@@ -158,16 +160,16 @@ main {
     background-color: var(--color-secundario);
     color: var(--color-principal);
     border-radius: var(--border-radius);
-    height: 4.1875rem; /* 67px */
-    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 4.1875rem; 
+    width: 100%; 
     border: 1px solid darkblue;
 }
 
 .boton-copiar {
     color: var(--color-principal);
     border-radius: var(--border-radius);
-    height: 4.1875rem; /* 67px */
-    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 4.1875rem; 
+    width: 90%; 
     border: 1px solid darkblue;
     background: transparent;
 }
@@ -176,7 +178,7 @@ footer {
     margin-top: auto;
     background-color: var(--color-titulo);
     color: white;
-    padding: 0.5rem; /* Espaciado interno */
+    padding: 0.5rem; 
     width: 100%;
     text-align: center;
 }
@@ -191,12 +193,13 @@ footer {
     flex-direction: column;
     align-items: center;
     background: transparent;
+    width:100%;
 }
 
 .mensajeNoEncontrado {
     font-family: var(--fuente-principal);
     font-weight: bold;
-    font-size: var(--font-size-mediana);
+    font-size: var(--font-size-grande);
     line-height: 120%;
     color: var(--color-texto-oscuro);
     background: transparent;
@@ -213,29 +216,29 @@ footer {
 
 .titulo {
     background: transparent;
-    font-size: medium;
+    font-size : var(--font-size-muy-grande);    
 }
 
-/* Responsive para tabletas */
+/* Responsive para tablet */
 @media (max-width: 768px) {
     main {
         flex-direction: column;
-        height: auto; /* Ajusta la altura según el contenido */
-        align-items: center; /* Centra las secciones */
+        height: auto; 
+        align-items: center; 
     }
 
-    .input-section, .output-section {
-        width: 90%; /* Ajusta el ancho de las secciones */
+    .entrada-section, .salida-section {
+        width: 90%; 
     }
 
-    .output-section {
-        margin-top: 1rem; /* Espacio entre las secciones */
+    .salida-section {
+        margin-top: 1rem; 
     }
 
 .botones {
     display: flex;
     flex-direction: column;
-    gap: 0.625rem; /* Espaciado entre botones */
+    gap: 0.625rem; 
 }
 
 }
@@ -244,22 +247,19 @@ footer {
 @media (max-width: 480px) {
     .botones {
         flex-direction: column;
-        gap: 0.625rem; /* Espaciado entre botones */
+        gap: 0.625rem; 
     }
 
     .boton-encriptar, .boton-desencriptar, .boton-copiar {
-        width: 100%; /* Botones ocupan todo el ancho disponible */
+        width: 100%; 
     }
 
-    .input-section, .output-section {
-        width: 100%; /* Secciones ocupan todo el ancho disponible */
+    .entrada-section, .salida-section {
+        width: 100%; 
     }
 
-    .output-section {
-        margin-top: 0.625rem; /* Espacio reducido entre las secciones */
+    .salida-section {
+        margin-top: 0.625rem;
     }
 
-    .textoEntrada, .textoSalida {
-        font-size: var(--font-size-pequeño); /* Ajustar tamaño de fuente para pantallas más pequeñas */
-    }
 }

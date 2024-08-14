@@ -57,7 +57,7 @@ function mostrarTextoSalida() {
     placeholderImagen.style.display = "none";
    mensajeNoEncontrado.style.display = "none";
    mensajeInformativo.style.display = "none"; 
-    // mensajesYCopiar.style.display = "none";
+  // mensajesYCopiar.style.display = "none";
 
     // Mostrar el textarea y el botón "Copiar"
     textoSalida.style.display = "block";
