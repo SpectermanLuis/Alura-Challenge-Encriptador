@@ -24,6 +24,7 @@ Este proyecto es una aplicación web simple que encripta y desencripta texto usa
     cd tu-repositorio
     ```
 
+
 3. Abre el archivo `index.html` en tu navegador para ver la aplicación en acción.
 
 ## Uso
